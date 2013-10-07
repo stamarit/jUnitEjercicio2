@@ -18,13 +18,12 @@ public class palindromoClass {
      */
     public String getPalindromo(String cadena) {
         
-        String palindromo = null;
+        String palindromo = "";
         
-        for(int i = cadena.length(); i >=0; i--) {
-            palindromo += i;
+        for(int i = cadena.length() - 1; i >= 0; i--) {
+            palindromo += cadena.charAt(i);
         }
-        System.err.println(cadena);
-        System.out.println(palindromo);
+        
         return palindromo;
     }
 }

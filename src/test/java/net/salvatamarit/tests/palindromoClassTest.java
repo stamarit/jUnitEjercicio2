@@ -51,12 +51,9 @@ public class palindromoClassTest {
         palindromoClass oPalindromo = new palindromoClass();
         assertNotNull("objeto palindromo creado", oPalindromo);
         //assertEquals("getPalindromo: hola = aloh", oPalindromo.getPalindromo("hola"), "aloh");
-        assertTrue("getPalindromo: hola = aloh", "aloh" == oPalindromo.getPalindromo("hola"));
-        /*if (3 != oCalculadora.getSuma(1, 2)) {
-            fail("getSuma: 1+2=·");
+        assertTrue("getPalindromo: hola = aloh", "aloh".equals(oPalindromo.getPalindromo("hola")));
+        if (! "aloh".equals(oPalindromo.getPalindromo("hola")) ) {
+            fail("getPalindromo: hola = aloh");
         }
-        assertSame("prueba getReference", oCalculadora, oCalculadora.getReference());
-        calculadoraClass oCalculadora2 = new calculadoraClass();
-        assertNotSame("no son el mismo objeto", oCalculadora, oCalculadora2);*/
     }
 }
